@@ -16,6 +16,7 @@
 
 */
 import React from "react";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import classnames from "classnames";
 // reactstrap components
 import {
@@ -77,7 +78,7 @@ export default function RegisterPage() {
   };
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar />
       <div className="wrapper">
         <div className="page-header">
           <div className="page-header-image" />
@@ -101,7 +102,7 @@ export default function RegisterPage() {
                         alt="..."
                         src={require("assets/img/square-purple-1.png").default}
                       />
-                      <CardTitle tag="h4">Register</CardTitle>
+                      <CardTitle tag="h5">Register</CardTitle>
                     </CardHeader>
                     <CardBody>
                       <Form className="form">

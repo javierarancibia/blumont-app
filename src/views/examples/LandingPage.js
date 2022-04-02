@@ -47,7 +47,7 @@ export default function LandingPage() {
     return function cleanup() {
       document.body.classList.toggle("landing-page");
     };
-  },[]);
+  }, []);
   return (
     <>
       <IndexNavbar />
@@ -86,11 +86,11 @@ export default function LandingPage() {
           <div className="content-center">
             <Row className="row-grid justify-content-between align-items-center text-left">
               <Col lg="6" md="6">
-                <h1 className="text-white">
+                <h1 className="text-white" style={{ fontSize: "40px" }}>
                   We keep your coin <br />
                   <span className="text-white">secured</span>
                 </h1>
-                <p className="text-white mb-3">
+                <p className="text-white mb-3" style={{ fontSize: "17px" }}>
                   A wonderful serenity has taken possession of my entire soul,
                   like these sweet mornings of spring which I enjoy with my
                   whole heart. I am alone, and feel...
@@ -246,27 +246,31 @@ export default function LandingPage() {
                 <Col md="6">
                   <div className="pl-md-5">
                     <h1>
-                      Large <br />
-                      Achivements
+                      News <br />
+                      Noticias
                     </h1>
                     <p>
-                      I should be capable of drawing a single stroke at the
-                      present moment; and yet I feel that I never was a greater
-                      artist than now.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Morbi et mauris imperdiet, tempus erat sed, tempus mauris.
+                      Suspendisse accumsan id dolor id venenatis. Pellentesque
+                      habitant morbi tristique senectus et netus et malesuada
+                      fames ac turpis egestas. Ut vulputate, magna sit amet
                     </p>
                     <br />
                     <p>
-                      When, while the lovely valley teems with vapour around me,
-                      and the meridian sun strikes the upper surface of the
-                      impenetrable foliage of my trees, and but a few stray.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Morbi et mauris imperdiet, tempus erat sed, tempus mauris.
+                      Suspendisse accumsan id dolor id venenatis. Pellentesque
+                      habitant morbi tristique senectus et netus et malesuada
+                      fames ac turpis egestas. Ut vulputate, magna sit amet
                     </p>
                     <br />
                     <a
                       className="font-weight-bold text-info mt-5"
-                      href="#pablo"
+                      href="#"
                       onClick={(e) => e.preventDefault()}
                     >
-                      Show all{" "}
+                      Ms Info{" "}
                       <i className="tim-icons icon-minimal-right text-info" />
                     </a>
                   </div>
@@ -475,7 +479,7 @@ export default function LandingPage() {
             className="path"
             src={require("assets/img/path3.png").default}
           />
-          <Container>
+          <Container style={{ backgroundColor: "white", borderRadius: "25px" }}>
             <Row>
               <Col md="4">
                 <hr className="line-info" />

@@ -32,10 +32,10 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route
-        path="/landing-page"
+        path="/home"
         render={(props) => <LandingPage {...props} />}
       />
-      <Route path="/components" render={(props) => <Index {...props} />} />
+      <Route path="/noticias" render={(props) => <Index {...props} />} />
       <Route
         path="/register-page"
         render={(props) => <RegisterPage {...props} />}
@@ -44,7 +44,7 @@ ReactDOM.render(
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
       />
-      <Redirect from="/" to="/landing-page" />
+      <Redirect from="/" to="/home" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
