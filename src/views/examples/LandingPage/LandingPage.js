@@ -1,25 +1,8 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-// react plugin used to create charts
+
 import { Line } from "react-chartjs-2";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-// reactstrap components
+
 import {
   Button,
   Card,
@@ -35,7 +18,6 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 import bigChartData from "variables/charts.js";
@@ -87,13 +69,15 @@ export default function LandingPage() {
             <Row className="row-grid justify-content-between align-items-center text-left">
               <Col lg="6" md="6">
                 <h1 className="text-white" style={{ fontSize: "40px" }}>
-                  We keep your coin <br />
-                  <span className="text-white">secured</span>
+                Lorem ipsum dolor <br />
+                  <span className="text-white">sit amet</span>
                 </h1>
                 <p className="text-white mb-3" style={{ fontSize: "17px" }}>
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel...
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  et mauris imperdiet, tempus erat sed, tempus mauris.
+                  Suspendisse accumsan id dolor id venenatis. Pellentesque
+                  habitant morbi tristique senectus et netus et malesuada fames
+                  ac turpis egestas. Ut vulputate, magna sit amet
                 </p>
                 <div className="btn-wrapper mb-3">
                   <p className="category text-success d-inline">
@@ -170,9 +154,9 @@ export default function LandingPage() {
                             </Col>
                             <Col md="8" xs="7">
                               <div className="numbers">
-                                <CardTitle tag="p">3,237</CardTitle>
+                                <CardTitle tag="p">3,227</CardTitle>
                                 <p />
-                                <p className="card-category">Awards</p>
+                                <p className="card-category">Awwwards</p>
                               </div>
                             </Col>
                           </Row>
@@ -258,7 +242,7 @@ export default function LandingPage() {
                     </p>
                     <br />
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Morbi et mauris imperdiet, tempus erat sed, tempus mauris.
                       Suspendisse accumsan id dolor id venenatis. Pellentesque
                       habitant morbi tristique senectus et netus et malesuada
@@ -479,11 +463,10 @@ export default function LandingPage() {
             className="path"
             src={require("assets/img/path3.png").default}
           />
-          <Container style={{ backgroundColor: "white", borderRadius: "25px" }}>
+          <Container fluid style={{ backgroundColor: "white", color: 'black', padding: '0px 20px 0px 20px' }}>
             <Row>
-              <Col md="4">
-                <hr className="line-info" />
-                <h1>
+              <Col md="12 text-center pt-5">
+                <h1 className="text-dark">
                   Choose the coin{" "}
                   <span className="text-info">that fits your needs</span>
                 </h1>
@@ -502,16 +485,16 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Light Coin</h4>
+                        <h4 className="text-uppercase text-dark">Light Coin</h4>
                         <span>Plan</span>
                         <hr className="line-primary" />
                       </Col>
                     </Row>
                     <Row>
-                      <ListGroup>
-                        <ListGroupItem>50 messages</ListGroupItem>
-                        <ListGroupItem>100 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                      <ListGroup >
+                        <ListGroupItem className="text-dark">50 messages</ListGroupItem>
+                        <ListGroupItem className="text-dark">100 emails</ListGroupItem>
+                        <ListGroupItem className="text-dark">24/7 Support</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
