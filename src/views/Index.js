@@ -30,7 +30,7 @@ export default function Index() {
       <div className="wrapper">
         <PageHeader />
         <div className="main">
-          <Basics />
+          {/* <Basics />
           <Navbars />
           <Tabs />
           <Pagination />
@@ -40,7 +40,7 @@ export default function Index() {
           <NucleoIcons />
           <Signup />
           <Examples />
-          <Download />
+          <Download /> */}
         </div>
         <Footer />
       </div>

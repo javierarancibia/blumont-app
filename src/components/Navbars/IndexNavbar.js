@@ -151,21 +151,21 @@ export default function IndexNavbar() {
                 Menu
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
+                <DropdownItem tag={Link} to="/landing-page">
+                  <i className="tim-icons icon-image-02" />
+                  Inicio
+                </DropdownItem>
                 <DropdownItem tag={Link} to="/noticias">
                   <i className="tim-icons icon-paper" />
                   Noticias
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/register-page">
                   <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
+                  Registro
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
-                  <i className="tim-icons icon-image-02" />
-                  Landing Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page">
+                <DropdownItem tag={Link} to="#">
                   <i className="tim-icons icon-single-02" />
-                  Profile Page
+                  Tu Perfil
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

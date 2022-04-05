@@ -1,24 +1,6 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import classnames from "classnames";
-// reactstrap components
 import {
   Button,
   Card,
@@ -39,8 +21,6 @@ import {
   Col,
 } from "reactstrap";
 
-// core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 export default function RegisterPage() {
@@ -102,7 +82,7 @@ export default function RegisterPage() {
                         alt="..."
                         src={require("assets/img/square-purple-1.png").default}
                       />
-                      <CardTitle tag="h5">Register</CardTitle>
+                      <CardTitle style={{fontSize:'3.5rem', marginLeft:'1rem'}}>Registro</CardTitle>
                     </CardHeader>
                     <CardBody>
                       <Form className="form">
@@ -117,7 +97,7 @@ export default function RegisterPage() {
                             </InputGroupText>
                           </InputGroupAddon>
                           <Input
-                            placeholder="Full Name"
+                            placeholder="Nombre completo"
                             type="text"
                             onFocus={(e) => setFullNameFocus(true)}
                             onBlur={(e) => setFullNameFocus(false)}
@@ -134,7 +114,7 @@ export default function RegisterPage() {
                             </InputGroupText>
                           </InputGroupAddon>
                           <Input
-                            placeholder="Email"
+                            placeholder="Correo Electronico"
                             type="text"
                             onFocus={(e) => setEmailFocus(true)}
                             onBlur={(e) => setEmailFocus(false)}
@@ -151,7 +131,7 @@ export default function RegisterPage() {
                             </InputGroupText>
                           </InputGroupAddon>
                           <Input
-                            placeholder="Password"
+                            placeholder="Contraseña"
                             type="text"
                             onFocus={(e) => setPasswordFocus(true)}
                             onBlur={(e) => setPasswordFocus(false)}
@@ -160,12 +140,12 @@ export default function RegisterPage() {
                         <FormGroup check className="text-left">
                           <Label check>
                             <Input type="checkbox" />
-                            <span className="form-check-sign" />I agree to the{" "}
+                            <span className="form-check-sign" />Acepto {" "}
                             <a
-                              href="#pablo"
+                              href="#"
                               onClick={(e) => e.preventDefault()}
                             >
-                              terms and conditions
+                              terminos y condiciones
                             </a>
                             .
                           </Label>
@@ -174,7 +154,7 @@ export default function RegisterPage() {
                     </CardBody>
                     <CardFooter>
                       <Button className="btn-round" color="primary" size="lg">
-                        Get Started
+                        Empezar
                       </Button>
                     </CardFooter>
                   </Card>

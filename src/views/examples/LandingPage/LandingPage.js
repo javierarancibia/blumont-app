@@ -69,7 +69,7 @@ export default function LandingPage() {
             <Row className="row-grid justify-content-between align-items-center text-left">
               <Col lg="6" md="6">
                 <h1 className="text-white" style={{ fontSize: "40px" }}>
-                Lorem ipsum dolor <br />
+                  Lorem ipsum dolor <br />
                   <span className="text-white">sit amet</span>
                 </h1>
                 <p className="text-white mb-3" style={{ fontSize: "17px" }}>
@@ -81,7 +81,7 @@ export default function LandingPage() {
                 </p>
                 <div className="btn-wrapper mb-3">
                   <p className="category text-success d-inline">
-                    From 9.99%/mo
+                    + info
                   </p>
                   <Button
                     className="btn-link"
@@ -139,7 +139,7 @@ export default function LandingPage() {
               className="path"
               src={require("assets/img/path4.png").default}
             />
-            <Container>
+            {/* <Container>
               <Row className="row-grid justify-content-between">
                 <Col className="mt-lg-5" md="5">
                   <Row>
@@ -260,7 +260,7 @@ export default function LandingPage() {
                   </div>
                 </Col>
               </Row>
-            </Container>
+            </Container> */}
           </section>
         </section>
         <section className="section section-lg">
@@ -282,19 +282,21 @@ export default function LandingPage() {
           <Container>
             <Row className="justify-content-center">
               <Col lg="12">
-                <h1 className="text-center">Your best benefit</h1>
+                <h1 className="text-center">Seccion 1: Informacion gratuita</h1>
                 <Row className="row-grid justify-content-center">
                   <Col lg="3">
                     <div className="info">
                       <div className="icon icon-primary">
                         <i className="tim-icons icon-money-coins" />
                       </div>
-                      <h4 className="info-title">Low Commission</h4>
+                      <h4 className="info-title">Precios de Mercado</h4>
                       <hr className="line-primary" />
                       <p>
-                        Divide details about your work into parts. Write a few
-                        lines about each one. A paragraph describing a feature
-                        will.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi et mauris imperdiet, tempus erat sed, tempus
+                        mauris. Suspendisse accumsan id dolor id venenatis.
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada
                       </p>
                     </div>
                   </Col>
@@ -303,12 +305,14 @@ export default function LandingPage() {
                       <div className="icon icon-warning">
                         <i className="tim-icons icon-chart-pie-36" />
                       </div>
-                      <h4 className="info-title">High Incomes</h4>
+                      <h4 className="info-title">Manual de buenas practicas</h4>
                       <hr className="line-warning" />
                       <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing feature will be a feature.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi et mauris imperdiet, tempus erat sed, tempus
+                        mauris. Suspendisse accumsan id dolor id venenatis.
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada.
                       </p>
                     </div>
                   </Col>
@@ -317,12 +321,14 @@ export default function LandingPage() {
                       <div className="icon icon-success">
                         <i className="tim-icons icon-single-02" />
                       </div>
-                      <h4 className="info-title">Verified People</h4>
+                      <h4 className="info-title">Glosario</h4>
                       <hr className="line-success" />
                       <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing be enough.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi et mauris imperdiet, tempus erat sed, tempus
+                        mauris. Suspendisse accumsan id dolor id venenatis.
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada.
                       </p>
                     </div>
                   </Col>
@@ -337,7 +343,30 @@ export default function LandingPage() {
             className="path"
             src={require("assets/img/path5.png").default}
           />
-          <Container>
+            <Col md="12 mx-5">
+              <Card className="card-chart card-plain">
+                <CardHeader>
+                  <Row>
+                    <Col className="text-left" sm="6">
+                      <hr className="line-info" />
+                      <h5 className="card-category">Seccion 2: Noticias</h5>
+                      <CardTitle tag="h2">
+                        Cartas desplegadas en carrusel
+                      </CardTitle>
+                    </Col>
+                  </Row>
+                </CardHeader>
+                {/* <CardBody>
+                <div className="chart-area">
+                  <Line
+                    data={bigChartData.data}
+                    options={bigChartData.options}
+                  />
+                </div>
+              </CardBody> */}
+              </Card>
+            </Col>
+          {/* <Container>
             <Row className="row-grid justify-content-between">
               <Col md="5">
                 <img
@@ -360,9 +389,7 @@ export default function LandingPage() {
                     <div className="justify-content-center">
                       <div className="numbers">
                         <CardTitle tag="p">573 K</CardTitle>
-                        <p className="card-category text-white">
-                          Satisfied customers
-                        </p>
+                        <p className="card-category text-white">Lorem Ipsum</p>
                       </div>
                     </div>
                   </CardBody>
@@ -372,7 +399,7 @@ export default function LandingPage() {
                     <div className="justify-content-center">
                       <div className="numbers">
                         <CardTitle tag="p">10 425</CardTitle>
-                        <p className="card-category text-white">Business</p>
+                        <p className="card-category text-white">Lorem</p>
                       </div>
                     </div>
                   </CardBody>
@@ -381,11 +408,12 @@ export default function LandingPage() {
               <Col md="6">
                 <div className="px-md-5">
                   <hr className="line-success" />
-                  <h3>Awesome features</h3>
+                  <h3>Dolor sit amet</h3>
                   <p>
-                    The design system comes with three pre-built pages to help
-                    you get started faster. You can change the text and images
-                    and you're good to go.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi et mauris imperdiet, tempus erat sed, tempus mauris.
+                    Suspendisse accumsan id dolor id venenatis. Pellentesque
+                    habitant morbi tristique senectus et netus et malesuada.
                   </p>
                   <ul className="list-unstyled mt-5">
                     <li className="py-2">
@@ -394,7 +422,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-vector" />
                         </div>
                         <div className="ml-3">
-                          <h6>Carefully crafted components</h6>
+                          <h6>Cumsan id dolor</h6>
                         </div>
                       </div>
                     </li>
@@ -404,7 +432,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-tap-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Amazing page examples</h6>
+                          <h6>tristique senectus et netus et</h6>
                         </div>
                       </div>
                     </li>
@@ -414,7 +442,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-single-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Super friendly support team</h6>
+                          <h6>tristique senectus et netus et</h6>
                         </div>
                       </div>
                     </li>
@@ -422,7 +450,7 @@ export default function LandingPage() {
                 </div>
               </Col>
             </Row>
-          </Container>
+          </Container> */}
         </section>
         <section className="section section-lg">
           <img
@@ -435,27 +463,6 @@ export default function LandingPage() {
             className="path2"
             src={require("assets/img/path2.png").default}
           />
-          <Col md="12">
-            <Card className="card-chart card-plain">
-              <CardHeader>
-                <Row>
-                  <Col className="text-left" sm="6">
-                    <hr className="line-info" />
-                    <h5 className="card-category">Total Investments</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
-                  </Col>
-                </Row>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={bigChartData.data}
-                    options={bigChartData.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
         </section>
         <section className="section section-lg section-coins">
           <img
@@ -463,12 +470,19 @@ export default function LandingPage() {
             className="path"
             src={require("assets/img/path3.png").default}
           />
-          <Container fluid style={{ backgroundColor: "white", color: 'black', padding: '0px 20px 0px 20px' }}>
+          <Container
+            fluid
+            style={{
+              backgroundColor: "white",
+              padding: "0px 30px 0px 30px",
+              borderRadius: "25px",
+            }}
+          >
             <Row>
               <Col md="12 text-center pt-5">
                 <h1 className="text-dark">
-                  Choose the coin{" "}
-                  <span className="text-info">that fits your needs</span>
+                  Elige el plan{" "}
+                  <span className="text-info">que mas se acomode a ti</span>
                 </h1>
               </Col>
             </Row>
@@ -485,22 +499,28 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase text-dark">Light Coin</h4>
+                        <h4 className="text-uppercase text-dark">Lorem</h4>
                         <span>Plan</span>
                         <hr className="line-primary" />
                       </Col>
                     </Row>
                     <Row>
-                      <ListGroup >
-                        <ListGroupItem className="text-dark">50 messages</ListGroupItem>
-                        <ListGroupItem className="text-dark">100 emails</ListGroupItem>
-                        <ListGroupItem className="text-dark">24/7 Support</ListGroupItem>
+                      <ListGroup>
+                        <ListGroupItem className="text-dark">
+                          Lorem ipsum
+                        </ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem ipsum
+                        </ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem ipsum
+                        </ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button className="btn-simple" color="primary">
-                      Get plan
+                      Inscribete
                     </Button>
                   </CardFooter>
                 </Card>
@@ -517,22 +537,28 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Dark Coin</h4>
+                        <h4 className="text-uppercase text-dark">Lorem</h4>
                         <span>Plan</span>
                         <hr className="line-success" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>150 messages</ListGroupItem>
-                        <ListGroupItem>1000 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem Ipsum
+                        </ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem Ipsum
+                        </ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem Ipsum
+                        </ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button className="btn-simple" color="success">
-                      Get plan
+                      Inscribete
                     </Button>
                   </CardFooter>
                 </Card>
@@ -549,22 +575,28 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Bright Coin</h4>
+                        <h4 className="text-uppercase text-dark">Lorem</h4>
                         <span>Plan</span>
                         <hr className="line-info" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>350 messages</ListGroupItem>
-                        <ListGroupItem>10K emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem Ipsum
+                        </ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem Ipsum
+                        </ListGroupItem>
+                        <ListGroupItem className="text-dark">
+                          Lorem Ipsum
+                        </ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button className="btn-simple" color="info">
-                      Get plan
+                      Inscribete
                     </Button>
                   </CardFooter>
                 </Card>

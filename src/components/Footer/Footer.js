@@ -32,7 +32,7 @@ export default function Footer() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/profile-page" tag={Link}>
+                <NavLink to="/#" tag={Link}>
                   Perfil
                 </NavLink>
               </NavItem>
@@ -42,12 +42,12 @@ export default function Footer() {
             <Nav>
               <NavItem>
                 <NavLink href="/">
-                  Contact Us
+                  Contactanos
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/">
-                  About Us
+                  Nosotros
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -57,7 +57,7 @@ export default function Footer() {
               </NavItem>
               <NavItem>
                 <NavLink href="/">
-                  License
+                  Licencia
                 </NavLink>
               </NavItem>
             </Nav>
